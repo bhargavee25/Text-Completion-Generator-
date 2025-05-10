@@ -1,94 +1,36 @@
 # Text-Completion-Generator
-A lightweight NLP application that predicts the next sentence based on user input, leveraging pre-trained transformer models like GPT-2. Built using Python, HuggingFace Transformers, and Streamlit, this tool demonstrates the power of Generative AI in real-world language tasks such as sentence prediction, writing assistance, and chatbot development.
 
-Features
-Generate context-aware next sentence(s) from user input.
+1. Project Title:
+Text Completion Generator using Generative AI
 
-Ranks top 3 predictions for relevance and coherence.
+2. Domain:
+•	Generative AI 
+•	NLP 
+•	Sentence Completion
 
-Simple and interactive web interface.
+3. Problem Statement:
+Understanding and generating coherent text is a critical challenge in NLP. The ability to predict the next sentence based on context is fundamental to building intelligent applications such as chatbots, content generators, and summarizers. The project aims to build a Gen AI-based system that can predict or suggest the most appropriate next sentence for a given input.
 
-Optional evaluation module for grammaticality and contextual fit.
+4. Proposed Solution:
+This project aims to develop a Next Sentence Prediction system leveraging pre-trained Generative AI models. The system will:
+•	Accept a user-input paragraph or sentence as the initial prompt.
+•	Utilize a language model to generate one or more likely continuations.
+•	Evaluate and rank the generated sentences based on their coherence and contextual relevance.
+•	Offer potential for future expansion into story generation or intelligent text auto-completion.
 
-Technologies Used
-Python 3.8+
+5. Objectives:
+•	Develop a functional prototype that predicts the next sentence using Generative AI models.
+•	Explore and experiment with different large language models (such as GPT and fine-tuned BERT) for Next Sentence Prediction tasks.
+•	Design an interactive interface to facilitate testing and validation of the predicted outputs.
 
-HuggingFace Transformers
+6. Expected Outcome:
+•	A lightweight NLP application capable of accurately generating the next sentence.
+•	A demo web page or application that accepts a sentence input and returns one or more predicted continuations.
 
-Streamlit
-
-PyTorch or TensorFlow (backend for Transformers)
-
-Installation
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/text-completion-generator.git
-cd text-completion-generator
-Create a virtual environment (optional but recommended):
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install the dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-How It Works
-User enters a sentence or paragraph into the input field.
-
-The GPT-2 model processes the input and generates multiple next sentence predictions.
-
-The system displays the top 3 most contextually relevant continuations.
-
-(Optional) Evaluations are shown for grammaticality and coherence.
-
-Running the App
-bash
-Copy
-Edit
-streamlit run app.py
-Then, open the URL provided by Streamlit (typically http://localhost:8501/) in your browser.
-
-Testing
-The system has been tested across:
-
-Various input types (short, long, and incomplete).
-
-Edge cases (nonsensical or abrupt inputs).
-
-Performance with different input lengths.
-
-Project Structure
-bash
-Copy
-Edit
-text-completion-generator/
-│
-├── app.py                # Streamlit app
-├── generator.py          # Core logic for sentence prediction
-├── evaluator.py          # Optional relevance/grammar checks
-├── requirements.txt      # Project dependencies
-└── README.md             # Project documentation
-Future Enhancements
-Support for other models (e.g., T5, GPT-Neo).
-
-User customization for number of predictions.
-
-Integration with story generation or chatbot systems.
-
-Improved evaluation and feedback mechanism.
-
-License
-This project is licensed under the MIT License.
-
-Acknowledgements
-HuggingFace Transformers
-
-Streamlit
+7. Tools & Technologies to be Used:
+- Python (Primary programming language)
+- Transformers library (by HuggingFace)
+- Pre-trained models: GPT-2, GPT-Neo, or BERT (for NSP baseline)
+- Flask/Streamlit for web interface
+- Jupyter Notebook for experimentation
+- Google Colab / Local GPU for model inference
